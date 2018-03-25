@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true">
+
+    <LinearLayout
+        android:id="@+id/infoLinearLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/movieListItemMargin"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/birth_date"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/tv_BirthDate"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.6" />
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/birth_place"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text=":" />
+
+            <TextView
+                android:id="@+id/tv_BirthPlace"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.6" />
+        </LinearLayout>
+
+        <android.support.v4.widget.Space
+            android:layout_width="match_parent"
+            android:layout_height="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="10">
+
+            <TextView
+
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="@string/biography"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tv_dot"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.4"
+                android:text=":"
+                android:visibility="invisible"/>
+            <TextView
+                android:id="@+id/tv_empty_Biography"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.6" />
+
+
+        </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/tv_Biography"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp" />
+
+    </LinearLayout>
+</RelativeLayout>

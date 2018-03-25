@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/detailRoot"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.MovieDetailsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <ImageView
+                    android:id="@+id/imgMovieDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="203dp"
+                    android:adjustViewBounds="true"
+                    android:fitsSystemWindows="true"
+                    android:scaleType="fitXY"
+                    android:src="@color/tabsBackgroung"
+                    android:transitionName="image" />
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+
+                    <ImageView
+                        android:id="@+id/imgMovieImage"
+                        android:layout_width="112dp"
+                        android:layout_height="164dp"
+                        android:layout_margin="@dimen/fab_margin"
+                        android:adjustViewBounds="true"
+                        android:src="@color/colorAccent"
+                        android:transitionName="@string/movie_image_transition_name" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="164dp"
+                        android:layout_centerVertical="true"
+                        android:layout_toEndOf="@id/imgMovieImage"
+                        android:gravity="center_vertical"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:id="@+id/movieName"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/fab_margin"
+                            android:layout_toEndOf="@id/imgMovieImage"
+                            android:text="@string/movie"
+                            android:textColor="@android:color/white"
+                            android:textSize="22sp"
+                            android:textStyle="italic|bold"
+                            android:fontFamily="cursive" />
+
+                        <TextView
+                            android:id="@+id/movieGenere"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginEnd="@dimen/fab_margin"
+                            android:layout_marginTop="10dp"
+                            android:text="@string/action"
+                            android:textStyle="italic|bold"
+                            android:fontFamily="serif-monospace"
+                            android:textSize="18sp"
+                            android:textColor="@android:color/white" />
+                    </LinearLayout>
+                </RelativeLayout>
+
+            </LinearLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+        </android.support.design.widget.CollapsingToolbarLayout>
+    </android.support.design.widget.AppBarLayout>
+
+    <android.support.design.widget.FloatingActionButton
+        android:id="@+id/fab_youtube"
+        android:layout_width="56dp"
+        android:layout_height="56dp"
+        android:layout_marginBottom="32dp"
+        android:layout_marginEnd="@dimen/fab_margin"
+        android:theme="@style/YoutubeFloatingTheme"
+        app:fabSize="mini"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom|end"
+        app:srcCompat="@drawable/youtube_256" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="?attr/colorPrimary"
+        android:orientation="vertical"
+        app:layout_anchor="@id/app_bar"
+        app:layout_anchorGravity="bottom"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <LinearLayout
+            android:id="@+id/ll_tabs"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="?attr/colorPrimary">
+
+            <android.support.design.widget.TabLayout
+                android:id="@+id/tabs"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                app:tabGravity="center"
+                app:tabIndicatorColor="?attr/colorAccent"
+                app:tabSelectedTextColor="@android:color/white"
+                app:tabTextColor="#99FFFFFF">
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/movieInfotabItem"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/info" />
+
+                <android.support.design.widget.TabItem
+                    android:id="@+id/movieInfotabItem2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/cast" />
+
+            </android.support.design.widget.TabLayout>
+        </LinearLayout>
+
+        <ProgressBar
+            android:id="@+id/progressBar"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:background="@android:color/white"
+            android:paddingTop="40dp" />
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/movieDetails_viewPager"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@android:color/white">
+
+        </android.support.v4.view.ViewPager>
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

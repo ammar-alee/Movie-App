@@ -1,0 +1,132 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <!--<item name="android:windowSharedElementsUseOverlay">false</item>-->
+
+    </style>
+
+    <style name="YoutubeFloatingTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#FFFFFF</item>
+
+        <!--<style name="myActionButtonStyle" parent="Widget.AppCompat.ActionButton">-->
+        <!--<item name="android:minWidth">30dp</item>-->
+        <!--<item name="android:maxWidth">48dp</item>-->
+        <!--<item name="android:width">38dp</item>-->
+        <!--</style>-->
+
+    </style>
+
+    <style name="Theme.Transparent" parent="Theme.AppCompat.Light.NoActionBar">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">#FFFFFF</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="android:windowIsTranslucent">true</item>
+        <!--<item name="android:windowContentTr/ansitions">true</item>-->
+        <!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+        <!--<item name="android:windowBackground">@android:color/transparent</item>-->
+    </style>
+
+    <!-- Change tab text appearance -->
+    <style name="MyCustomTextAppearance" parent="TextAppearance.Design.Tab">
+        <item name="textAllCaps">true</item>
+        <item name="android:textAppearance">@style/CustomTabWidgetText</item>
+    </style>
+
+    <style name="CustomTabWidgetText"
+        parent="@android:style/TextAppearance.Widget.TabWidget">
+        <item name="android:textSize">18sp</item>
+    </style>
+    <style name="AppTheme.NoActionBar" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+
+        <!--<item name="android:actionButtonStyle">@style/myActionButtonStyle</item>-->
+        <!--<item name="actionButtonStyle">@style/myActionButtonStyle</item>-->
+    </style>
+
+    <style name="FullScreenTheme">
+
+    </style>
+
+    <style name="CoordinatorAppTheme" parent="Theme.Transparent">
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+    </style>
+
+    <style name="ivMoviePoster">
+        <item name="android:layout_width">150dp</item>
+        <item name="android:layout_height">130dp</item>
+        <item name="android:layout_margin">10dp</item>
+    </style>
+
+    <style name="tvReleaseYear">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">10dp</item>
+        <item name="android:textColor">#7b7b7b</item>
+    </style>
+
+    <style name="tvMovieTitle">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textSize">16sp</item>
+        <item name="android:textColor">#000000</item>
+    </style>
+
+    <style name="tvGenre">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">5dp</item>
+        <item name="android:textColor">#7b7b7b</item>
+    </style>
+
+    <style name="AppTheme.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="AppTheme.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="ExpandedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="CollapsedAppBar" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">24sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+    <style name="ExpandedAppBarPlus1" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">#fff</item>
+        <item name="android:textStyle">bold</item>
+        <item name="android:layout_centerHorizontal">true</item>
+    </style>
+
+    <style name="CollapsedAppBarPlus1" parent="@android:style/TextAppearance.Medium">
+        <item name="android:textSize">22sp</item>
+        <item name="android:textColor">@android:color/white</item>
+        <item name="android:textStyle">normal</item>
+    </style>
+
+
+    <style name="AppTheme.NoActionBar2" parent="AppTheme">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+        <item name="colorControlNormal">#FFFFFF</item>
+        <item name="android:windowFullscreen">true</item>
+    </style>
+</resources>

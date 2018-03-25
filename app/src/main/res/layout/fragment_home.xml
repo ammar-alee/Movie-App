@@ -1,0 +1,16 @@
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constraintLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/light_grey"
+    tools:context="com.interview.ammaryali.movieapp.activities.HomeActivity$PlaceholderFragment">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/recyclerHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginStart="6dp"
+        android:paddingBottom="1dp"
+        android:paddingTop="4dp" />
+</android.support.constraint.ConstraintLayout>

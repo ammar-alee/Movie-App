@@ -1,0 +1,52 @@
+<resources>
+    <string name="app_name">Movie App</string>
+    <string name="title_activity_home">HomeActivity</string>
+    <string name="tab_text_1">Now Playing</string>
+    <string name="tab_text_2">UpComing</string>
+    <string name="tab_text_3">Popular</string>
+    <string name="tab_text_4">Top Rated</string>
+    <string name="action_settings">Settings</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <!--<string name="movie">Movie</string>-->
+    <string name="app">App</string>
+
+
+    <string name="movie_image_transition_name">movieImage</string>
+    <string name="actor_image_transition_name">actorImage</string>
+    <string name="title_activity_movie_details">Movie Details</string>
+
+    <string name="info">Info</string>
+    <string name="cast">Cast</string>
+    <string name="release_date">Release Date</string>
+    <string name="home">Home</string>
+    <string name="share">Share</string>
+    <string name="open_with_browser">Open with browser</string>
+    <string name="birth_place">Birthplace</string>
+    <string name="birth_date">Born</string>
+    <string name="biography">Biography</string>
+    <string name="view_on_tmdb">View on TMDB Site</string>
+    <string name="actor">Actor</string>
+    <string name="character">Character</string>
+
+    <!--Slider Intro Dialects-->
+    <string name="title_activity_welcome">Home Screen</string>
+    <string name="next">NEXT</string>
+    <string name="skip">SKIP</string>
+    <string name="start">GOT IT</string>
+
+    <string name="slide_1_title">Hello World !!!</string>
+    <string name="slide_1_desc">MovieApp is an app for\n information related to Upcoming and Now Playing Movies, including cast, production crew, fictional characters, biographies, plot summaries.</string>
+    <string name="slide_2_title">Movie Details</string>
+    <string name="slide_2_desc">Decide what to watch and check\n for their plot summaries and their release dates. Even check their official trailers using provided link.</string>
+
+    <string name="slide_3_title">Actors Information</string>
+    <string name="slide_3_desc">MovieApp also provides you all details of the actors.\n Like their birthday, their biography and the movies they have worked in.</string>
+
+
+    <string name="play_again_desc">To see the welcome slider again, goto Settings -> apps -> welcome slider -> clear data</string>
+    <string name="play_again">Play Again</string>
+    <string name="learn_more">Learn More</string>
+    <string name="search">Search</string>
+    <string name="action">Action</string>
+    <string name="movie">Movie\t</string>
+</resources>

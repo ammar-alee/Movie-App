@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginLeft="@dimen/movieListItemMargin"
+        android:layout_marginRight="@dimen/movieListItemMargin"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+        <ListView
+            android:id="@+id/credit_List_View"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:divider="@color/colorAccent"
+            android:dividerHeight="0dp"
+            android:nestedScrollingEnabled="true"
+            android:scrollbars="none" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>

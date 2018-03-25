@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fitsSystemWindows="true"
+    tools:context=".activities.ActorDetailsActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:id="@+id/app_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:fitsSystemWindows="true"
+        android:theme="@style/AppTheme.AppBarOverlay"
+        app:expanded="true">
+
+        <android.support.design.widget.CollapsingToolbarLayout
+            android:id="@+id/toolbar_layout"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:fitsSystemWindows="true"
+            app:contentScrim="?attr/colorPrimary"
+            app:layout_scrollFlags="scroll|exitUntilCollapsed"
+            app:toolbarId="@+id/toolbar">
+
+            <RelativeLayout
+                android:id="@+id/relativeLayout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                app:layout_collapseMode="parallax"
+                tools:ignore="UselessParent">
+
+                <ImageView
+                    android:id="@+id/iv_back_drop"
+                    android:layout_width="match_parent"
+                    android:layout_height="203dp"
+                    android:transitionName="image"
+                    tools:ignore="ContentDescription" />
+
+                <ImageView
+                    android:id="@+id/actor_Image"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="30dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginTop="170dp"
+                    android:clickable="false"
+                    android:scaleType="fitXY"
+
+                    android:transitionName="@string/actor_image_transition_name" />
+
+                <TextView
+                    android:id="@+id/tvActorTitle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/iv_back_drop"
+                    android:layout_margin="10dp"
+                    android:layout_toRightOf="@id/actor_Image"
+                    android:text="Elon Musk"
+                    android:textColor="@android:color/white"
+                    android:textSize="24sp"
+                    android:textStyle="bold"
+                    android:visibility="invisible" />
+
+            </RelativeLayout>
+
+            <android.support.v7.widget.Toolbar
+                android:id="@+id/toolbar"
+                android:layout_width="match_parent"
+                android:layout_height="?attr/actionBarSize"
+                app:layout_collapseMode="pin"
+                app:popupTheme="@style/AppTheme.PopupOverlay" />
+
+        </android.support.design.widget.CollapsingToolbarLayout>
+
+    </android.support.design.widget.AppBarLayout>
+
+    <include layout="@layout/content_actor_details" />
+
+
+</android.support.design.widget.CoordinatorLayout>
